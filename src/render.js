@@ -81,3 +81,9 @@ async function selectSource(source) {
 
   // Updates the UI
 }
+
+// Captures all recorded chunks
+function handleDataAvailable(e) {
+  console.log('video data available');
+  recordedChunks.push(e.data);
+}
